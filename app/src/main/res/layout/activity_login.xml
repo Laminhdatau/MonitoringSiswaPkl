@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/students"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:id="@+id/tlusername"
+        android:layout_below="@id/imageLogo"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="Username"
+            android:inputType="text"
+            android:id="@+id/username"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:id="@+id/tlpassword"
+        android:layout_marginTop="15dp"
+        app:passwordToggleEnabled="true"
+        android:layout_below="@id/tlusername"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_below="@id/tlpassword"
+        android:layout_marginHorizontal="15dp"
+        android:text="Login"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:id="@+id/btnlogin"
+        android:background="@drawable/btn_primary"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_below="@id/login"
+        android:layout_marginHorizontal="15dp"
+        android:text="Register"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:id="@+id/btnregis"
+        android:background="@drawable/btn_primary"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+</RelativeLayout>
