@@ -14,5 +14,11 @@ public interface ApiInterface {
         @Field("username") String username,
         @Field("password") String password
     );
+    @FormUrlEncoded
+    @POST("api/authentication/register")
+    Call<ResponseLogin> register(
+            @Field("username") String username,
+            @Field("password") String password
+    );
 
 }

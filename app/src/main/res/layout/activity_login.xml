@@ -65,7 +65,7 @@
         android:layout_height="55dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_below="@id/login"
+        android:layout_below="@id/btnlogin"
         android:layout_marginHorizontal="15dp"
         android:text="Register"
         android:layout_marginTop="10dp"
